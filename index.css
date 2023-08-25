@@ -1,0 +1,70 @@
+.box{
+    margin: 20px;
+    width: 97.5vw;
+    height: 95vh;
+    background-color: green;
+    text-align: center;
+    /* transition: transform 0.5s; */
+}
+
+/* .box:hover{
+
+    background-color: blue;
+    transform: skew(60deg);
+} */
+
+.but{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.but button{
+    background-color: red;
+}
+
+/* mobile direction - column
+for tablet - column
+for laptop small - row
+big screen - row
+tv- row */
+
+/* for tablet - pink
+laptop - green
+larger scren - grey */
+
+@media screen and (max-width: 1200px){
+    .box{
+        background-color: grey;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .box{
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .box{
+        background-color: red;
+    }
+}
+
+
+
+
+
+/* Wrong Doing, Always follow the big screen to smaller screen styling */
+
+/* @media screen and (max-width: 1220px){
+    .box{
+        background-color: yellow;
+    }
+} */
